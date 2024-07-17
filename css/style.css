@@ -15,7 +15,19 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 15px 0 0 0;
 }
 
 .main-container {
@@ -34,6 +46,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 0 30px 0;
+    height: 79px;
 
 }
 
@@ -54,10 +67,54 @@ body {
     padding: 15px;
 }
 
+header li:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+.informations-text {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0 15px 0;
+}
+
 /********Recherche*********/
 
 form {
-    padding: 30px;
+    display: flex;
+    height: 49px; 
+    margin: 35px 0;
+    
+}
+
+form .localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #F2F2F2;
+    height: 100%;
+    width: 49px;
+    border-radius: 15px 0 0 15px;
+}
+
+#recherche {
+    border: 2px solid #F2F2F2;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 0;
+    
+}
+
+.bouton-recherche {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 20px;
 }
 
 /********Filtres*********/
@@ -65,17 +122,60 @@ form {
 .filtres {
     display: flex;
     flex-direction: row;
+    gap: 15px;
+}
+
+.filtres p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.filtres i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    width: 22px;
+}
+
+.bouton-filtre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #D9D9D9;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 25px;
+    padding: 5px 20px;
+    gap: 10px;
+}
+
+.bouton-filtre:hover {
+    background-color: #DEEBFF;
 }
 
 .info i {
-    height: 15px;
-    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 25px;
+    margin: 0 15px 0 0;
 }
 
 .info {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 24px;
+    margin: 30px 0;
 }
+
+/****** Hebergements And Populaires ***********/
 
 a {
     color: inherit;
@@ -110,7 +210,6 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -130,24 +229,45 @@ a {
 
 .hebergements-cards {
     display: flex;
-    justify-content: center;
     flex-flow: wrap row;
+    margin: 25px 0;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 175px;
-    margin: 9px;
-    padding-bottom: 20px;
+    justify-content: flex-start;
+    width: 210px;
+    height: 170px;
+    margin: 6px 6px 6px 0;
+    padding-bottom: 15px;
 }
 
 .hebergements-cards img {
-    height: 50%;
+    height: 60%;
     width: 100% ;
     border-radius: 20px 20px 0 0;
 }
+
+.hebergements-cards .card-title {
+    margin: 10px 0;
+}
+
+
+.hebergements-cards .card-subtitle {
+    margin: 10px 0 5px 0;
+}
+
+.hebergements-cards .card-txt {
+    margin-left: 5px;
+}
+
+.hebergements-info {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -195,7 +315,36 @@ a {
 }
 
 
+/********* Footer *********/
 
+footer {
+    display: flex;
+    height: 163px;
+    background: #F2F2F2;
+    margin-top: 35px;
+    padding: 10px;
+}
+
+footer h3 {
+    font-size: 18px;
+}
+
+.footer-box {
+    padding-left: 15px;
+    padding-right: 200px;
+}
+
+footer ul {
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer li {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
