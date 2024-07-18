@@ -265,11 +265,11 @@ a {
 .hebergements-info {
     font-weight: 700;
     font-size: 18px;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 
-/****** Populaires ***********/
+/********* Populaires ***********/
 .populaires {
     width: 32%;
 }
@@ -314,6 +314,32 @@ a {
     margin-bottom: 5px;
 }
 
+/********* Activités ********/
+
+.activites {
+    margin: 20px 0;
+}
+
+.activites-cards {
+    display: flex;
+}
+
+.activites-cards .card {
+    width: 275px;
+    height: 415px;
+    padding: 0 0 15px 0;
+    margin: 15px 25px 15px 0;
+}
+
+.activites-cards img {
+    height: 89%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites-cards .card-content {
+    padding-left: 15px;
+}
 
 /********* Footer *********/
 
@@ -329,7 +355,7 @@ footer h3 {
     font-size: 18px;
 }
 
-.footer-box {
+.footer-conteneur {
     padding-left: 15px;
     padding-right: 200px;
 }
