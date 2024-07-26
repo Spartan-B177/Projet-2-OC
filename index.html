@@ -18,36 +18,39 @@
         
         <!-------- Header---------->
 
-    <header class="header">
-        <img src="images/logo/Booki.png" alt="Logo de Booki"/>
-        <ul>
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Activités</a></li>
-        </ul>
-    </header>
-
+    
     <div class="main-container">
         <main>
+            <header class="header">
+                <img src="images/logo/Booki.png" alt="Logo de Booki"/>
+                <ul>
+                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+            </header>
+
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="informations-text">En plein centre-ville ou en pleine nature</p>
 
 
             <!----------Recherche--------->
         
-            <form action="" method="get">
+            <form action="#" method="get">
                     <i class="fa-solid fa-location-dot localisation"></i>
                     <input type="text" name="recherche" id="recherche" value="Marseille, France">
-                    <input type="submit" value="Rechercher" class="bouton-recherche">
+                    <button class="bouton-recherche"><p>Rechercher</p><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
 
                 <!----------Filtres------------>
 
             <div class="filtres">
                 <p>Filtres</p>
-                <button type="button" class="bouton-filtre"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
-                <button type="button" class="bouton-filtre"><i class="fa-solid fa-person"></i>Familial</button>
-                <button type="button" class="bouton-filtre"><i class="fa-solid fa-heart"></i>Romantique</button>
-                <button type="button" class="bouton-filtre"><i class="fa-solid fa-fire"></i>Nos pépites</button>
+                <div class="conteneur-boutons">
+                    <button type="button" class="bouton-filtre"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                    <button type="button" class="bouton-filtre"><i class="fa-solid fa-person"></i>Familial</button>
+                    <button type="button" class="bouton-filtre"><i class="fa-solid fa-heart"></i>Romantique</button>
+                    <button type="button" class="bouton-filtre"><i class="fa-solid fa-fire"></i>Nos pépites</button>
+                </div>
             </div>
             
             <div class="info">
@@ -62,7 +65,7 @@
                     <div class="hebergements-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="images/hebergements/fred-kleber.jpg">
+                                <img src="images/hebergements/fred-kleber.jpg" alt="Photo de l'Hôtel du Port">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel du port</h3>
@@ -81,7 +84,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="images/hebergements/febrian-zakaria.jpg">
+                                <img src="images/hebergements/febrian-zakaria.jpg" alt="Photo de l'Hôtel Chez Amina">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Chez Amina</h3>
@@ -100,7 +103,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="images/hebergements/reisetopia.jpg">
+                                <img src="images/hebergements/reisetopia.jpg" alt="Photo de l'Hôtel Les mouettes">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Les mouettes</h3>
@@ -119,7 +122,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="images/hebergements/annie-spratt.jpg">
+                                <img src="images/hebergements/annie-spratt.jpg" alt="Photo de l'Hôtel de la mer">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel de la mer</h3>
@@ -138,7 +141,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="images/hebergements/marcus-loke.jpg">
+                                <img src="images/hebergements/marcus-loke.jpg" alt="Photo de l'Auberge La Canebière">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Auberge La Canebière</h3>
@@ -157,7 +160,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="images/hebergements/nicate-lee.jpg">
+                                <img src="images/hebergements/nicate-lee.jpg" alt="Photo de l'Auberge Le Panier">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Auberge Le Panier</h3>
@@ -256,7 +259,7 @@
                 <div class="activites-cards">
                     <a href="#">
                         <article class="card">
-                            <img src="images/activites/reno-laithienne.jpg">
+                            <img src="images/activites/reno-laithienne.jpg" alt="Photo du Vieux Port">
                             <div class="card-content">
                                 <h3 class="card-title">Vieux-Port</h3>
                             </div>
@@ -264,7 +267,7 @@
                     </a>
                     <a href="#">
                         <article class="card">
-                            <img src="images/activites/paul-hermann.jpg">
+                            <img src="images/activites/paul-hermann.jpg" alt="Photo du Fort de Pomègues">
                             <div class="card-content">
                                 <h3 class="card-title">Fort de Pomègues</h3>
                             </div>
@@ -272,7 +275,7 @@
                     </a>
                     <a href="#">
                         <article class="card">
-                            <img src="images/activites/kilyan-sockalingum.jpg">
+                            <img src="images/activites/kilyan-sockalingum.jpg" alt="Photo du Par national des Calanques">
                             <div class="card-content">
                                 <h3 class="card-title">Parc national des Calanques</h3>
                             </div>
@@ -280,7 +283,7 @@
                     </a>
                     <a href="#">
                         <article class="card">
-                            <img src="images/activites/florian-wehde.jpg">
+                            <img src="images/activites/florian-wehde.jpg" alt="Photo de Notre-Dame-de-la-Garde">
                             <div class="card-content">
                                 <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                             </div>
