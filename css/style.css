@@ -341,7 +341,7 @@ a {
 /********* Activités ********/
 
 .activites {
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .activites-cards {
@@ -386,7 +386,7 @@ footer h3 {
 
 .footer-conteneur {
     padding-left: 15px;
-    padding-right: 10px;
+    width: 30%;
 }
 
 footer ul {
@@ -546,6 +546,7 @@ footer li {
     
     .activites {
         padding: 20px;
+        margin: 20px 0;
     }
 
     .activites-cards {
