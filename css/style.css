@@ -120,8 +120,13 @@ form .localisation {
     padding: 0 20px;
 }
 
+
 .bouton-recherche i {
     display: none;
+}
+
+.bouton-recherche:hover {
+    cursor: pointer;
 }
 
 /********Filtres*********/
@@ -489,7 +494,7 @@ footer li {
         box-shadow: 0px 2px 5px grey;
     }
 
-    .bouton-recherche p {
+    .bouton-recherche-text {
         display: none;
     }
 
