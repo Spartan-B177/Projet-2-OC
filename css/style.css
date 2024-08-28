@@ -171,6 +171,7 @@ form .localisation {
 
 .bouton-filtre:hover {
     background-color: #DEEBFF;
+    cursor: pointer;
 }
 
 .info i {
@@ -471,6 +472,7 @@ footer li {
         padding: 0 0 15px 0;
         text-align: center;
         width: 50%;
+        border-bottom: 2px solid #F2F2F2;
     }
 
     header li:hover {
@@ -478,8 +480,19 @@ footer li {
         border-top: none;
     }
 
-    .form {
-        width: 100%;
+    h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .informations-text {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    form {
+        margin-left: 20px;
+        margin-right: 10px;
     }
 
     #recherche {
@@ -503,12 +516,22 @@ footer li {
         color: white;
     }
 
+    .filtres p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .conteneur-boutons {
         justify-content: center;
     }
 
     .bouton-filtre {
         width: 45%;
+    }
+
+    .info {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     #hebergements-and-populaires {
